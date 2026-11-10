@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Check — ПЗ 41</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero"></header>
+      <div class="layout">
+        <section class="card">
+          <h2>Выберите книгу</h2>
+          <p class="muted">
+            Результат появится после имитации запроса к каталогу.
+          </p>
+          <div class="field">
+            <label for="book-select">Название книги</label>
+            <select id="book-select">
+              <option value="atlas">Атлас мира</option>
+              <option value="novel">Загадки океана</option>
+              <option value="guide">Путеводитель по космосу</option>
+            </select>
+          </div>
+          <div class="controls">
+            <button class="btn btn--primary" id="check-button">
+              Проверить наличие
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <h2>Ответ каталога</h2>
+          <div class="output" id="result" aria-live="polite">
+            Выберите книгу и запустите проверку.
+          </div>
+          <p class="status" id="status" role="status">Ожидание проверки.</p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
