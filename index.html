@@ -12,30 +12,31 @@
       <header class="hero"></header>
       <div class="layout">
         <section class="card">
-          <h2>Выберите книгу</h2>
+          <h2>Доступні книги</h2>
           <p class="muted">
-            Результат появится после имитации запроса к каталогу.
+            Результат з'явиться після імітації запиту до каталогу.
           </p>
           <div class="field">
-            <label for="book-select">Название книги</label>
+            <label for="book-select">Назва кнiгi</label>
             <select id="book-select">
-              <option value="atlas">Атлас мира</option>
-              <option value="novel">Загадки океана</option>
-              <option value="guide">Путеводитель по космосу</option>
+              <option value="atlas">Атлас світу</option>
+              <option value="novel">Загадки океану</option>
+              <option value="guide">Путівник з космосу</option>
+              <option value="homersimpson">Конституція України</option>
             </select>
           </div>
           <div class="controls">
             <button class="btn btn--primary" id="check-button">
-              Проверить наличие
+              Перевірити наявність
             </button>
           </div>
         </section>
         <section class="card">
-          <h2>Ответ каталога</h2>
+          <h2>Відповідь каталогу</h2>
           <div class="output" id="result" aria-live="polite">
-            Выберите книгу и запустите проверку.
+           Виберіть книгу та запустіть перевірку.
           </div>
-          <p class="status" id="status" role="status">Ожидание проверки.</p>
+          <p class="status" id="status" role="status">Очікування перевірки.</p>
         </section>
       </div>
     </main>
