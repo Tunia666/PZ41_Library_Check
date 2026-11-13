@@ -33,12 +33,12 @@ checkButton.addEventListener("click", () => {
   checkAvailability(bookSelect.value)
   .then((title) =>{
     result.textContent = 'Книга доступна для выдачи';
-    status.className = "status - success";
+    status.className = "status status -- success";
     status.textContent = "В наличии";
   })
   .catch((error) => {
     result.textContent = error.message;
-    status.className = "status -- error";
+    status.className = "status status -- error";
     status.textContent = "Ошибка";
   })
   .finally(() => {
