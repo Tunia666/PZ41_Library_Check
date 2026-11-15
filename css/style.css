@@ -5,7 +5,9 @@
   --paper: #f4f6fb;
   --line: #dfe5f0;
   --success: #13865e;
-  --error: #c33c59;
+  --error: hsl(0, 53%, 50%);
+  --noerror: hsl(109, 40%, 50%);
+
 }
 * {
   box-sizing: border-box;
@@ -140,6 +142,10 @@ select:focus-visible {
 .status--error {
   color: var(--error);
   background: #fff0f2;
+}
+.status--noerror{
+  color: var(--noerror);
+  background-color: hsl(108, 76%, 88%);
 }
 .status--working {
   color: #624db7;
